@@ -1,0 +1,68 @@
+/* Rows with a thumbnail and quantity buttons (supplies, files) */
+
+.o_list {
+    border: 1px solid var(--o-gray-300);
+    border-radius: var(--o-radius);
+    background: var(--o-white);
+}
+.o_list_row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--o-gray-200);
+}
+.o_list_row:last-child {
+    border-bottom: 0;
+}
+.o_list_row img,
+.o_list_row .o_img_ph {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--o-radius);
+    object-fit: cover;
+    background: var(--o-gray-200);
+}
+.o_list_name {
+    flex: 1;
+    min-width: 0;
+    color: var(--o-gray-900);
+}
+.o_list_name small {
+    display: block;
+    color: var(--o-gray-600);
+}
+.o_list_empty {
+    padding: 10px;
+    color: var(--o-gray-600);
+}
+.o_qty {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.o_qty button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--o-gray-300);
+    border-radius: var(--o-radius);
+    background: var(--o-gray-100);
+    color: var(--o-gray-800);
+}
+.o_qty span {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--o-gray-900);
+}
+.o_add_line {
+    display: block;
+    width: 100%;
+    padding: 9px 10px;
+    border: 0;
+    background: none;
+    text-align: left;
+    font-weight: 500;
+    color: var(--o-action);
+}

@@ -1,0 +1,33 @@
+/* Full screen dialog */
+
+.o_dialog {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    background: var(--o-gray-100);
+}
+.o_dialog_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: calc(8px + var(--safe-top)) 12px 8px;
+    background: var(--o-white);
+    border-bottom: 1px solid var(--o-gray-300);
+}
+.o_dialog_header h3 {
+    flex: 1;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.o_dialog_body {
+    flex: 1;
+    overflow-y: auto;
+}
+.o_dialog_footer {
+    padding: 10px 12px calc(10px + var(--safe-bottom));
+    background: var(--o-white);
+    border-top: 1px solid var(--o-gray-300);
+}

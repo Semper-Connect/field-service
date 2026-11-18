@@ -1,0 +1,31 @@
+/* Control panel and search field */
+
+.o_control_panel {
+    padding: 10px 12px 8px;
+    background: var(--o-white);
+    border-bottom: 1px solid var(--o-gray-300);
+}
+.o_control_panel_flat {
+    border-bottom: 0;
+}
+.o_searchview {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid var(--o-gray-300);
+    border-radius: var(--o-radius);
+    background: var(--o-white);
+}
+.o_searchview i {
+    color: var(--o-gray-600);
+}
+.o_searchview input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 16px;
+}

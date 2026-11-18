@@ -1,0 +1,43 @@
+/* Foldable sections (details/summary) */
+
+.o_fold {
+    margin-bottom: 6px;
+    background: var(--o-white);
+    border: 1px solid var(--o-gray-300);
+    border-radius: var(--o-radius);
+}
+.o_fold_flat {
+    background: transparent;
+    border: 0;
+}
+.o_fold > summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 0 12px;
+    font-weight: 500;
+    color: var(--o-gray-900);
+    cursor: pointer;
+}
+.o_fold > summary::-webkit-details-marker {
+    display: none;
+}
+.o_fold > summary::after {
+    content: "\f107";
+    margin-left: auto;
+    font-family: FontAwesome;
+    font-size: 15px;
+    color: var(--o-gray-500);
+}
+.o_fold[open] > summary::after {
+    content: "\f106";
+}
+.o_fold .o_count {
+    font-weight: 500;
+    color: var(--o-gray-600);
+}
+.o_fold_body {
+    padding: 0 12px 12px;
+}

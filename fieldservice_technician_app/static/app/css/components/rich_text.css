@@ -1,0 +1,58 @@
+/* Texts from Odoo, plain or formatted */
+
+/* Texts from Odoo: plain ones keep their line breaks, formatted ones their
+   paragraphs, lists and bold, without the margins of a full page */
+.o_plain {
+    white-space: pre-wrap;
+}
+.o_rich p,
+.o_rich ul,
+.o_rich ol,
+.o_rich blockquote,
+.o_rich pre,
+.o_rich h1,
+.o_rich h2,
+.o_rich h3,
+.o_rich h4,
+.o_rich h5,
+.o_rich h6 {
+    margin: 0 0 6px;
+}
+.o_rich > :last-child {
+    margin-bottom: 0;
+}
+.o_rich ul,
+.o_rich ol {
+    padding-left: 20px;
+}
+.o_rich h1,
+.o_rich h2,
+.o_rich h3,
+.o_rich h4,
+.o_rich h5,
+.o_rich h6 {
+    font-size: 1em;
+}
+.o_rich blockquote {
+    padding-left: 8px;
+    border-left: 3px solid var(--o-gray-300);
+    color: var(--o-gray-600);
+}
+.o_rich pre {
+    white-space: pre-wrap;
+}
+.o_rich table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+.o_rich td,
+.o_rich th {
+    padding: 2px 6px;
+    border: 1px solid var(--o-gray-300);
+}
+.o_rich hr {
+    border: 0;
+    border-top: 1px solid var(--o-gray-300);
+}

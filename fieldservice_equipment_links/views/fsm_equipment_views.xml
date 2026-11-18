@@ -1,0 +1,14 @@
+<odoo>
+    <record id="fsm_equipment_form_maintenance_link" model="ir.ui.view">
+        <field name="name">fsm.equipment.form.maintenance.link</field>
+        <field name="model">fsm.equipment</field>
+        <field name="inherit_id" ref="fieldservice.fsm_equipment_form_view"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button name="action_view_maintenance_equipment" type="object" class="oe_stat_button" icon="fa-wrench">
+                    <span class="o_stat_text">Maintenance</span>
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

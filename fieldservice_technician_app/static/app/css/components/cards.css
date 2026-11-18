@@ -1,0 +1,24 @@
+/* Card lists: planning cards and outbox entries */
+
+.o_day_card,
+.o_card {
+    position: relative;
+    margin-bottom: 6px;
+    padding: 9px 10px 9px 13px;
+    background: var(--o-white);
+    border: 1px solid var(--o-gray-300);
+    border-radius: var(--o-radius);
+}
+.o_day_card::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    bottom: -1px;
+    width: 3px;
+    border-radius: var(--o-radius) 0 0 var(--o-radius);
+    background: var(--o-kanban-color, var(--o-gray-400));
+}
+.o_day_list {
+    padding: 8px 8px 0;
+}

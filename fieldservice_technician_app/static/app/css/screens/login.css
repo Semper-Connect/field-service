@@ -1,0 +1,25 @@
+/* Login screen */
+
+.o_login {
+    max-width: 380px;
+    margin: 40px auto;
+    padding: 28px 22px;
+    text-align: center;
+    background: var(--o-white);
+    border: 1px solid var(--o-gray-300);
+    border-radius: var(--o-radius-lg);
+}
+.o_login img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+.o_login h2 {
+    margin: 0 0 6px;
+    font-size: 21px;
+}
+.o_login p {
+    margin: 0 0 20px;
+    color: var(--o-gray-600);
+}

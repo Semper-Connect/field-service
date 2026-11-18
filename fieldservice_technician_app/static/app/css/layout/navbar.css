@@ -1,0 +1,78 @@
+/* Top bar: back button, app icon, title and the sync chip */
+
+.o_navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: calc(var(--o-navbar-height) + var(--safe-top));
+    padding: var(--safe-top) 12px 0;
+    background: var(--o-white);
+    border-bottom: 1px solid var(--o-gray-300);
+}
+.o_navbar_app img {
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+}
+.o_navbar_back {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    margin-left: -6px;
+    border: 0;
+    border-radius: var(--o-radius);
+    background: transparent;
+    color: var(--o-gray-800);
+    font-size: 17px;
+}
+.o_navbar_back:active {
+    background: var(--o-gray-200);
+}
+.o_navbar_brand {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--o-gray-900);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.o_sync_chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    padding: 4px 10px;
+    border: 1px solid var(--o-gray-300);
+    border-radius: 999px;
+    background: var(--o-white);
+    color: var(--o-gray-700);
+    font-size: 12px;
+}
+.o_sync_dot {
+    font-size: 7px;
+    color: var(--o-success);
+}
+.o_sync_chip.offline .o_sync_dot {
+    color: var(--o-gray-500);
+}
+.o_sync_chip.waiting {
+    border-color: var(--o-warning);
+}
+.o_sync_chip.waiting .o_sync_dot {
+    color: var(--o-warning);
+}
+.o_sync_chip.syncing .o_sync_dot {
+    animation: o_blink 1s infinite ease-in-out;
+}
+@keyframes o_blink {
+    50% {
+        opacity: 0.2;
+    }
+}

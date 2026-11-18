@@ -1,0 +1,19 @@
+/* Banner under the top bar: offline, session expired */
+
+.o_banner {
+    padding: 9px 14px;
+    border-bottom: 1px solid;
+}
+.o_banner.warning {
+    background: var(--o-warning-bg);
+    color: var(--o-warning-text);
+    border-color: #ffe0a3;
+}
+.o_banner.info {
+    background: var(--o-gray-200);
+    color: var(--o-gray-800);
+    border-color: var(--o-gray-300);
+}
+.o_banner a {
+    font-weight: 600;
+}

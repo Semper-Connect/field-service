@@ -1,0 +1,35 @@
+/* Form fields: labels, inputs, hints */
+
+.o_field {
+    margin-bottom: 16px;
+}
+.o_field > .o_label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--o-gray-900);
+}
+/* 16px: below that, iOS zooms into the field on focus */
+.o_input {
+    width: 100%;
+    padding: 9px 11px;
+    font-size: 16px;
+    color: var(--o-gray-900);
+    border: 1px solid var(--o-gray-400);
+    border-radius: var(--o-radius);
+    background: var(--o-white);
+}
+textarea.o_input {
+    min-height: 130px;
+    resize: vertical;
+}
+.o_input:focus {
+    outline: 0;
+    border-color: var(--o-action);
+    box-shadow: 0 0 0 0.2rem rgba(1, 126, 132, 0.2);
+}
+.o_field_hint {
+    margin: -2px 0 6px;
+    font-size: 12.5px;
+    color: var(--o-gray-600);
+}

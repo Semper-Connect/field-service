@@ -1,0 +1,121 @@
+/* Report form: time spent, stages, photos */
+
+.o_form_sheet {
+    padding: 14px 16px 18px;
+    background: var(--o-white);
+    border-bottom: 1px solid var(--o-gray-300);
+}
+.o_form_meta {
+    font-size: 13px;
+    color: var(--o-gray-600);
+}
+.o_form_title {
+    margin: 0 0 14px;
+    line-height: 1.3;
+    font-size: 18px;
+    font-weight: 600;
+}
+.o_signer {
+    margin-bottom: 8px;
+}
+
+.o_float_time {
+    display: grid;
+    grid-template-columns: var(--o-tap) 1fr var(--o-tap);
+    gap: 6px;
+}
+.o_float_time button {
+    border: 1px solid var(--o-gray-400);
+    border-radius: var(--o-radius);
+    background: var(--o-white);
+    color: var(--o-gray-800);
+    font-size: 16px;
+}
+.o_float_time .o_input {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+.o_chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+.o_chips button {
+    padding: 3px 11px;
+    border: 1px solid var(--o-gray-300);
+    border-radius: 999px;
+    background: var(--o-white);
+    font-size: 13px;
+}
+
+.o_stages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.o_stages input {
+    display: none;
+}
+.o_stages label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 36px;
+    padding: 0 12px;
+    border: 1px solid var(--o-gray-400);
+    border-radius: 18px;
+    background: var(--o-white);
+    font-weight: 500;
+    color: var(--o-gray-800);
+    cursor: pointer;
+}
+.o_stages label small {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--o-gray-600);
+}
+.o_stages input:checked + label {
+    border-color: var(--o-action);
+    background: var(--o-action-soft);
+    color: var(--o-action);
+}
+
+.o_photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+.o_photo {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--o-radius);
+    background: var(--o-gray-200);
+}
+.o_photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.o_photo button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 28px;
+    height: 28px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+.o_photos:not(:empty),
+.o_files:not(:empty) {
+    margin-bottom: 8px;
+}
+.o_attach input {
+    display: none;
+}

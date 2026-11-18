@@ -1,0 +1,182 @@
+/* Intervention sheet: hero, stage, notes, mission, contacts, chatter */
+
+.o_hero {
+    position: relative;
+    padding: 14px 16px 14px 18px;
+    background: var(--o-white);
+    border-bottom: 1px solid var(--o-gray-300);
+}
+.o_hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--o-kanban-color, var(--o-gray-400));
+}
+/* A row, like the planning card: the stage badge centered on the date */
+.o_hero_time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--o-brand);
+    font-variant-numeric: tabular-nums;
+}
+.o_hero_street {
+    margin-top: 3px;
+    line-height: 1.25;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--o-gray-900);
+}
+.o_hero_where {
+    margin-top: 1px;
+    color: var(--o-gray-600);
+}
+.o_hero_object {
+    margin-top: 8px;
+    color: var(--o-gray-700);
+}
+.o_hero_actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 12px;
+}
+.o_folds {
+    padding: 8px 8px 0;
+}
+
+.o_note {
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    border-left: 3px solid var(--o-warning);
+    border-radius: 0 var(--o-radius) var(--o-radius) 0;
+    background: #fffaf0;
+}
+.o_note > b {
+    display: block;
+    font-size: 12.5px;
+    color: var(--o-gray-800);
+}
+
+.o_group {
+    display: grid;
+    grid-template-columns: minmax(96px, 34%) 1fr;
+    gap: 7px 12px;
+}
+.o_group .o_label {
+    font-weight: 600;
+    color: var(--o-gray-900);
+}
+.o_group .o_value {
+    overflow-wrap: anywhere;
+}
+
+.o_contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--o-gray-200);
+}
+.o_contact:last-child {
+    border-bottom: 0;
+}
+.o_contact_main {
+    flex: 1;
+    min-width: 0;
+}
+.o_contact_name {
+    font-weight: 500;
+    color: var(--o-gray-900);
+}
+.o_contact_role {
+    font-size: 12.5px;
+    color: var(--o-gray-600);
+}
+
+.o_message {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0;
+}
+.o_message_body {
+    flex: 1;
+    min-width: 0;
+}
+.o_message_head {
+    font-size: 13px;
+}
+.o_message_head b {
+    color: var(--o-gray-900);
+}
+.o_message_note {
+    margin-left: 4px;
+    padding: 0 6px;
+    border-radius: 8px;
+    background: var(--o-gray-200);
+    font-size: 11px;
+    color: var(--o-gray-700);
+}
+.o_message_change {
+    margin-top: 2px;
+    font-size: 13px;
+}
+.o_message_file {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    color: var(--o-action);
+}
+.o_message_body .o_doc_photos {
+    max-width: 280px;
+    margin-top: 6px;
+}
+.o_message_text {
+    margin-top: 2px;
+}
+/* Démarrer / Arrêter, where the stage dropdown was */
+.o_timer_field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 8px 0;
+    padding: 10px 12px;
+    background: var(--o-white);
+    border: 1px solid var(--o-gray-300);
+    border-radius: var(--o-radius);
+}
+.o_timer_field.o_running {
+    border-left: 3px solid var(--o-action);
+}
+.o_timer_state {
+    flex: 1;
+    min-width: 0;
+    font-weight: 500;
+    color: var(--o-gray-800);
+    font-variant-numeric: tabular-nums;
+}
+.o_running .o_timer_state {
+    color: var(--o-action);
+}
+.o_timer_field .btn {
+    width: auto;
+    flex-shrink: 0;
+}
+/* Status of the intervention, on its own line */
+.o_hero_stage {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    font-size: 13px;
+    color: var(--o-gray-700);
+}
+.o_hero_stage .o_stage {
+    font-size: 13px;
+    color: var(--o-gray-900);
+}

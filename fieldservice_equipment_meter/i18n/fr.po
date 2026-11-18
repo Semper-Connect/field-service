@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fieldservice_equipment_meter\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.actions.act_window,name:fieldservice_equipment_meter.action_meter_reading
+msgid "Meter Readings"
+msgstr "Relevés de compteur"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment__meter_reading_count
+msgid "Meter Readings"
+msgstr "Relevés de compteur"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment__current_meter_value
+msgid "Current Meter"
+msgstr "Compteur actuel"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment__current_meter_unit
+msgid "Meter Unit"
+msgstr "Unité du compteur"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment_meter_reading__equipment_id
+msgid "Equipment"
+msgstr "Équipement"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment_meter_reading__reading_date
+msgid "Reading Date"
+msgstr "Date du relevé"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment_meter_reading__value
+msgid "Value"
+msgstr "Valeur"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment_meter_reading__unit
+msgid "Unit"
+msgstr "Unité"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment_meter_reading__source
+msgid "Source"
+msgstr "Source"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment_meter_reading__note
+msgid "Note"
+msgstr "Note"
+
+#. module: fieldservice_equipment_meter
+#: model:ir.model.fields,field_description:fieldservice_equipment_meter.field_fsm_equipment_meter_reading__unit
+msgid "Unit"
+msgstr "Unité"
+
+#. module: fieldservice_equipment_meter
+msgid "Hours"
+msgstr "Heures"
+
+#. module: fieldservice_equipment_meter
+msgid "Kilometers"
+msgstr "Kilomètres"
+
+#. module: fieldservice_equipment_meter
+msgid "Cycles"
+msgstr "Cycles"
+
+#. module: fieldservice_equipment_meter
+msgid "Other"
+msgstr "Autre"

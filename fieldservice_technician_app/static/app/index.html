@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="apple-mobile-web-app-title" content="Interventions"/>
+    <title>Interventions</title>
+    <link rel="manifest" href="/technician/manifest.webmanifest"/>
+    <link rel="icon" href="{{ASSETS}}/img/icon-192.png"/>
+    <link rel="apple-touch-icon" href="{{ASSETS}}/img/icon-192.png"/>
+    <link rel="stylesheet" href="/web/static/src/libs/fontawesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="{{ASSETS}}/css/app.css"/>
+</head>
+<body>
+    <header class="o_navbar">
+        <button class="o_navbar_back" id="back" hidden aria-label="Retour"><i class="fa fa-chevron-left"></i></button>
+        <span class="o_navbar_app" id="app-icon"><img src="{{ASSETS}}/img/icon-192.png" alt=""/></span>
+        <span class="o_navbar_brand" id="title">Interventions</span>
+        <a class="o_sync_chip" id="netpill" href="#/outbox">
+            <i class="fa fa-circle o_sync_dot"></i><span id="netpill-label">…</span>
+        </a>
+    </header>
+    <div class="o_banner" id="banner" hidden></div>
+    <main id="view" class="o_content"></main>
+    <div class="o_dialog" id="dialog" hidden></div>
+    <div class="o_notification" id="toast" role="status" aria-live="polite"></div>
+    <!-- The store is classic scripts: the service worker loads them too, same list in sw.js -->
+    <script src="{{ASSETS}}/js/store/db.js"></script>
+    <script src="{{ASSETS}}/js/store/rpc.js"></script>
+    <script src="{{ASSETS}}/js/store/jobs.js"></script>
+    <script src="{{ASSETS}}/js/store/colleagues.js"></script>
+    <script src="{{ASSETS}}/js/store/days.js"></script>
+    <script src="{{ASSETS}}/js/store/catalog.js"></script>
+    <script src="{{ASSETS}}/js/store/outbox.js"></script>
+    <script src="{{ASSETS}}/js/store/entries.js"></script>
+    <script src="{{ASSETS}}/js/store/drafts.js"></script>
+    <script src="{{ASSETS}}/js/store/timer.js"></script>
+    <script src="{{ASSETS}}/js/store/route.js"></script>
+    <script src="{{ASSETS}}/js/store/reports.js"></script>
+    <script src="{{ASSETS}}/js/store/index.js"></script>
+    <script type="module" src="{{ASSETS}}/js/main.js"></script>
+</body>
+</html>

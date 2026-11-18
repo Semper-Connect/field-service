@@ -1,0 +1,46 @@
+/* Small centered dialog, over the dimmed screen */
+
+.o_dialog.o_dialog_popup {
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.45);
+}
+.o_popup {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    border-radius: var(--o-radius-lg);
+    background: var(--o-white);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.o_popup_title {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--o-gray-900);
+}
+.o_popup_text {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--o-gray-700);
+    overflow-wrap: anywhere;
+}
+.o_popup_text strong {
+    font-weight: 600;
+    color: var(--o-gray-900);
+}
+.o_popup_actions {
+    display: flex;
+    gap: 10px;
+}
+.o_popup_actions .btn {
+    flex: 1;
+    width: auto;
+    padding: 0 8px;
+    white-space: nowrap;
+}
+.o_popup_actions .btn-action {
+    flex: 2;
+}

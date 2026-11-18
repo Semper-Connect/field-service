@@ -1,0 +1,16 @@
+<odoo>
+    <record id="fsm_order_form_technician_app" model="ir.ui.view">
+        <field name="name">fsm.order.form.technician.app</field>
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_form"/>
+        <field name="arch" type="xml">
+            <field name="todo" position="after"><field name="calendar_event_id" invisible="1"/></field>
+        </field>
+    </record>
+
+    <!-- The standard Operations menu opens the list action without kanban.
+         Keep the dashboard action's kanban-first behavior for daily dispatch. -->
+    <record id="fieldservice.action_fsm_operation_order" model="ir.actions.act_window">
+        <field name="view_mode">kanban,list,form,calendar</field>
+    </record>
+</odoo>

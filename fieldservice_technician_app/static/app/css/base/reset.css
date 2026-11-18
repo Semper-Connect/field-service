@@ -1,0 +1,103 @@
+/* Page defaults: box model, wrapping, typography, links, utility classes */
+
+* {
+    box-sizing: border-box;
+}
+/* Long names, links and file names wrap: nothing may widen the page.
+   "anywhere" also lets flex and grid items shrink below their longest word. */
+body {
+    overflow-wrap: anywhere;
+}
+img,
+video,
+canvas,
+svg,
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+/* Short labels keep their words whole: the long text next to them wraps instead */
+.btn,
+.o_badge,
+.o_count,
+.o_qty_badge,
+.o_message_note,
+.o_sync_chip {
+    overflow-wrap: normal;
+}
+.o_badge,
+.o_count,
+.o_qty_badge,
+.o_message_note,
+.o_sync_chip {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+[hidden] {
+    display: none !important;
+}
+html,
+body {
+    margin: 0;
+}
+/* Column: the page fills the screen, so a short page keeps its footer at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: var(--o-gray-100);
+    color: var(--o-gray-700);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu,
+        "Noto Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+a {
+    color: var(--o-action);
+    text-decoration: none;
+}
+/* Links inside texts: blue and underlined, like in Odoo */
+.o_link,
+.o_rich a {
+    color: var(--o-link);
+    text-decoration: underline;
+}
+h1,
+h2,
+h3 {
+    color: var(--o-gray-900);
+}
+button,
+.btn,
+.o_navbar,
+.o_sticky_footer {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.text-danger {
+    color: var(--o-danger) !important;
+}
+.text-muted {
+    color: var(--o-gray-600) !important;
+}
+.o_zip {
+    color: var(--o-zip);
+    font-weight: 600;
+}
+.o_priority_star {
+    color: var(--o-star);
+}
+.o_text_block {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
